@@ -37,7 +37,7 @@ public class TaskControllerV1Test {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.title").value("Comprar leche"))
-                .andExpect(jsonPath("$.done").value(false));
+                .andExpect(jsonPath("$.completed").value(false));
     }
 
     @Test
