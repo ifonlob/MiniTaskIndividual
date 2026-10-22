@@ -13,7 +13,7 @@ public class TaskService {
 
     public List<Task> list(Boolean completed){ return (completed==null)? repo.findAll(): repo.findByCompleted(completed); }
 
-    public Task create(CreateTaskDTO dto){ Task t=new Task(dto.title());
+    public Task create(CreateTaskDTO dto){ Task t=new Task(dto.title().strip());
         return repo.save(t);
     }
 
