@@ -1,0 +1,82 @@
+# =========================================================================
+# Maven / Gradle Build Outputs
+# =========================================================================
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.gradle/
+bin/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# Log files
+*.log
+
+# =========================================================================
+# IDEs & Editors
+# =========================================================================
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### VS Code ###
+.vscode/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =========================================================================
+# Spring Boot Specifics
+# =========================================================================
+HELP.md
+**/doc/
+*.jar
+*.war
+*.ear
+*.rar
+
+# Database / Local Secrets
+*.db
+*.sqlite
+application-local.properties
+application-local.yml
+application-dev.properties
+application-dev.yml
+
+# =========================================================================
+# Operating System Files
+# =========================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSSharedFileList
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
